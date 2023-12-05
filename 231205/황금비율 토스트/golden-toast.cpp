@@ -15,10 +15,11 @@ void solve() {
     } else if (opt == 'R') {
         if (it != bread.end()) it++;
     } else if (opt == 'D') {
-        if (it != bread.end()) it = bread.erase(++it);
+        if (it != bread.end()) it = bread.erase(it);
     } else if (opt == 'P') {
         char c; cin >> c;
         it = bread.insert(it, c);
+        it++;
     }
 }
 
