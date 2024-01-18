@@ -10,6 +10,8 @@ int main() {
     for (int t = n; t > 0; t /= 2) {
         s.push(t % 2);
     }
+    
+    if (s.empty()) cout << '0';
 
     while(!s.empty()) {
         cout << s.top();
